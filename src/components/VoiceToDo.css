@@ -7,8 +7,8 @@
   align-items: center;
   background-color: rgba(127, 255, 212, 0.126);
   border-radius: 30px;
-  border: solid 1px rgb(127, 255, 212);
-  padding: 10px;
+  box-shadow: 1px 1px 30px 5px rgba(127, 255, 212, 0.67);
+  padding: 10px 20px;
 }
 
 .task-input {
@@ -35,6 +35,11 @@
   color: white;
   cursor: pointer;
   font-size: larger;
+}
+
+.add-btn:hover{
+  transform: rotateY(360deg);
+  transition: transform 4s ease;
 }
 
 .inputBtn-div{
