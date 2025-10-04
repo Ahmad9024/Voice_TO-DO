@@ -37,16 +37,18 @@ export const VoiceToDo = () => {
 
   return (
     <div className="voice-todo">
-      <h1>VoiceToDo</h1>
-      <input
-        className="task-input"
-        type="text"
-        value={input}
-        placeholder="Add a Task"
-        onChange={(e) => setInput(e.target.value)}
-        onKeyDown={(e) => e.key === "Enter" && addTask()}
-      />
-      <button className="add-btn" onClick={addTask}>Add</button>
+      <h1>Voice ToDo 📢</h1>
+      <div className='inputBtn-div'>
+        <input
+          className="task-input"
+          type="text"
+          value={input}
+          placeholder="Add a Task"
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && addTask()}
+        />
+        <button className="add-btn" onClick={addTask}>+</button>
+      </div>
       <ul className="task-list">
         {tasks.map(t => (
           <li key={t.id} className={`task-item ${t.done ? "done" : ""}`}>

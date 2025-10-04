@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(127, 255, 212, 0.126);
+  border-radius: 30px;
+  border: solid 1px rgb(127, 255, 212);
+  padding: 10px;
 }
 
 .task-input {
@@ -13,17 +17,28 @@
   margin: 10px;
   border: 1px solid green;
   color: green;
-  width: 70%;
+  border: none;
+  width: 500px;
+}
+
+.task-input:focus{
+  box-shadow: 1px 1px 10px 4px rgba(127, 255, 212, 0.67);
+  outline: none;
 }
 
 .add-btn {
   border-radius: 25px;
-  padding: 10px 20px;
-  margin: 10px;
+  padding: 5px 10px;
+  margin: 15px;
   background-color: green;
   border: none;
   color: white;
   cursor: pointer;
+  font-size: larger;
+}
+
+.inputBtn-div{
+  display: flex;
 }
 
 .task-list {
